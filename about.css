@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+body{
+    background-color: rgb(218, 234, 248);
+}
+nav{
+    margin: 0 auto;
+    background-color: white;
+    display: flex;
+    width: 69%;
+    border-radius: 50px 50px 50px 50px;
+    justify-content: space-around;
+    height: 80px;
+    line-height: 80px;
+    z-index: 111;
+}
+.logo{
+    display: flex;
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    letter-spacing: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.navItems{
+    display: flex;
+}
+.navItems li{
+    list-style: none;
+    margin: 0 15px;
+}
+.navItems li a{
+    font-size: 25px;
+    color: black;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: capitalize;
+
+}
+.navItems li:hover a{
+    z-index: 3;
+    color: cyan;
+}
+.container{
+    position: absolute;
+    width: 1089px;
+    height: 350px;
+    left: 73px;
+    top: 95px;
+}
+.container::before{
+    content: '';
+    animation: object1 3s linear infinite;
+}.container::after{
+    content: '';
+    animation: object2 3s linear infinite;
+}
+@keyframes object1{
+    50%{
+        left: -53%;
+        top: 101%;
+    }
+}
+img{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 271px;
+    height: 244px;
+    left: 383px;
+    top: 119px;
+
+    background: url(brett-jordan-5L0R8ZqPZHk-unsplash);
+    border: 7px solid #FFFFFF;
+}
+.blue{
+    position: absolute;
+    width: 377px;
+    height: 254px;
+    left: 73px;
+    top: 182px;
+    background: radial-gradient(135.41% 298.31% at 0% 10.83%, #0D94CD 46.29%, rgba(13, 148, 205, 0) 100%);
+}
+h1{
+    position: absolute;
+    width: 69.72px;
+    height: 21.8px;
+    left: 668px;
+    top: 86px;
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 17px;
+
+    color: #07E2F0;
+}
+p{
+    position: absolute;
+    width: 297.79px;
+    height: 94.9px;
+    left: 669.99px;
+    top: 100.65px;
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 37px;
+
+    color: #000000;
+}
+p2{
+    position: absolute;
+    width: 492px;
+    height: 58.99px;
+    left: 670px;
+    top: 200px;
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+
+    color: #000000;
+}
+button{
+    position: absolute;
+    width: 253px;
+    height: 67.97px;
+    left: 684px;
+    top: 295.03px;
+    border: none;
+    cursor: pointer;
+
+    color: white;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+
+    background: #FE1F54;
+    border-radius: 20px;
+}
+button:hover{
+    background-color: white;
+    color: #FE1F54;
+    transition: 1s;
+}
